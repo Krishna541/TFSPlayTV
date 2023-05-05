@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimens_150">150dp</dimen>
+    <dimen name="dimen_provider">32px</dimen>
+    <dimen name="lb_browse_rows_margin_top">50dp</dimen>
+    <dimen name="content_image_gradient_size">35dp</dimen>
+    <dimen name="content_image_width_small">711px</dimen>
+    <dimen name="content_image_height_small">400px</dimen>
+    <dimen name="content_image_width">1066px</dimen>
+    <dimen name="content_image_height">600px</dimen>
+</resources>

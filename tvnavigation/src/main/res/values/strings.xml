@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Home">Home</string>
+    <string name="Movies">Movies</string>
+    <string name="Shows">Shows</string>
+    <string name="PodCasts">Live TV</string>
+    <string name="Music">Movie</string>
+    <string name="TVShows">TV Shows</string>
+    <string name="Profile">Profile</string>
+    <string name="Settings">Settings</string>
+    <string name="About">About</string>
+    <string name="Documentaries">Documentaries</string>
+    <string name="ShortFilm">Short Film</string>
+    <string name="OnRent">On Rent</string>
+
+
+    <string name="space">&#9251;</string>
+    <string name="spl_1">-</string>
+    <string name="spl_2">/</string>
+    <string name="spl_3">:</string>
+    <string name="spl_4">;</string>
+    <string name="spl_5">(</string>
+    <string name="spl_6">)</string>
+    <string name="spl_7">&#38;</string>
+    <string name="spl_8">\"</string>
+    <string name="spl_9">,</string>
+    <string name="spl_10">\?</string>
+    <string name="spl_11">{</string>
+    <string name="spl_12">}</string>
+    <string name="spl_13">[</string>
+    <string name="spl_14">]</string>
+    <string name="spl_15">#</string>
+    <string name="spl_16">%</string>
+    <string name="spl_17">^</string>
+    <string name="spl_18">*</string>
+    <string name="spl_19">+</string>
+    <string name="spl_20">=</string>
+    <string name="spl_21">\\</string>
+    <string name="spl_22">|</string>
+    <string name="spl_23">&#126;</string>
+    <string name="spl_24">&#60;</string>
+    <string name="spl_25">&#62;</string>
+    <string name="spl_26">&#36;</string>
+    <string name="spl_27">&#8364;</string>
+    <string name="spl_28">&#8377;</string>
+    <string name="spl_29">&#8378;</string>
+    <string name="spl_30">&#46;</string>
+    <string name="spl_31">&#33;</string>
+    <string name="spl_32">\'</string>
+</resources>

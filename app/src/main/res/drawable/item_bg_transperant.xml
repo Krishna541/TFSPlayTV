@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item android:state_focused="true"  >
+        <shape
+            android:shape="rectangle" android:padding="10dp">
+            <!-- you can use any color you want I used here gray color-->
+            <solid android:color="#00000000"/>
+            <stroke android:width="2dp"
+                android:color="@color/white" />
+            <corners android:radius="4px"/>
+        </shape>
+    </item>
+
+
+    <item android:state_focused="false" >
+        <shape
+            android:shape="rectangle" android:padding="10dp">
+            <!-- you can use any color you want I used here gray color-->
+            <solid android:color="#00000000"/>
+            <stroke android:width="0dp"
+                android:color="#5B3462" />
+            <corners android:radius="1px"/>
+        </shape>
+    </item>
+
+
+</selector>

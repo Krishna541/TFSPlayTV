@@ -1,0 +1,110 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android{
+
+    signingConfigs {
+        release {
+            storeFile file('..\\tfsplaytv.jks')
+            storePassword 'f1berst0ryTV'
+            keyPassword 'f1berst0ryTV'
+            keyAlias 'tfsplay_tv'
+        }
+    }
+
+    compileSdkVersion 33
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "in.fiberstory.tfsplaytv"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 21
+        versionName "2.12"
+
+//        versionCode 37
+//        versionName "1.3"
+
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            shrinkResources false  // Avoid conflicts with Instant Run
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.0'
+    implementation 'androidx.leanback:leanback:1.0.0'
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation project(path: ':tvnavigation')
+
+    // Retrofit ...
+    def retrofitVersion = "2.5.0"
+    def rxjava2Version = "2.1.9"
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-scalars:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava2Version"
+
+    // okhttp ...
+    def okHttpVersion = "3.11.0"
+    implementation "com.squareup.okhttp3:okhttp:$okHttpVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
+
+    // Image Loader ...
+    implementation 'com.github.bumptech.glide:glide:4.13.2'
+
+    implementation "com.google.android.material:material:1.2.0-alpha03"
+    implementation 'com.github.bosphere.android-fadingedgelayout:fadingedgelayout:1.0.0'
+
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    // country code picker library
+   // implementation 'com.hbb20:ccp:2.5.0'
+
+    implementation 'androidx.preference:preference-ktx:1.2.0'
+
+    kapt 'com.github.bumptech.glide:compiler:4.14.1'
+    implementation 'com.github.bumptech.glide:annotations:4.14.1'
+    implementation "com.github.bumptech.glide:okhttp3-integration:4.11.0"
+
+    implementation 'com.google.android.exoplayer:exoplayer:2.12.0'
+
+    //country code picker
+    implementation project(path: ':ccp')
+    debugImplementation project(':ccp')
+    releaseImplementation project(':ccp')
+
+    implementation 'com.google.firebase:firebase-crashlytics:18.3.1'
+
+
+
+}

@@ -1,0 +1,11 @@
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="green">#269b24</color>
+    <color name="navigation_menu_focus_color">#FFD60A</color>
+    <color name="navigation_menu_focus_out_color">#A9A9A9</color>
+    <color name="orange">#ff9800</color>
+    <color name="yellow">#FFEB3B</color> <!-- Use with black text -->
+    <color name="app_background">#A9421C</color>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/content"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginBottom="-10dp"
+        android:src="@drawable/ic_action_tryangle"
+        android:contentDescription="TODO" />
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_33sdp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:text="Title"
+            android:background="@drawable/popup_selector"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@drawable/text_selector" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/colorGray"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:background="@drawable/popup_selector"
+            android:textSize="@dimen/_13sdp"
+            android:text="Genre"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@drawable/text_selector" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/colorGray"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:drawablePadding="@dimen/_10sdp"
+            android:focusable="true"
+            android:background="@drawable/popup_selector"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_13sdp"
+            android:text="People"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@drawable/text_selector" />
+
+    </LinearLayout>
+</LinearLayout>
+
+

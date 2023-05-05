@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">TFS Play</string>
+    <string name="browse_title">Videos by Your Company</string>
+    <string name="related_movies">Related Videos</string>
+    <string name="grid_view">Grid View</string>
+    <string name="error_fragment">Error Fragment</string>
+    <string name="personal_settings">Personal Settings</string>
+    <string name="watch_trailer_1">Watch trailer</string>
+    <string name="watch_trailer_2">FREE</string>
+    <string name="rent_1">Rent By Day</string>
+    <string name="rent_2">From $1.99</string>
+    <string name="buy_1">Buy and Own</string>
+    <string name="buy_2">AT $9.99</string>
+    <string name="movie">Movie</string>
+
+    <string name="acc_settings">Account Settings</string>
+
+    <!-- Error messages -->
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+
+    <!--    Pagination-->
+    <string name="title_oops">Oops</string>
+    <string name="title_no_videos">No videos</string>
+    <string name="message_try_again">Try again?</string>
+    <string name="message_check_again">Check again?</string>
+
+    <string name="search_results">Search results for \'%1$s\'</string>
+    <string name="no_search_results">No search results found for \'%1$s\'</string>
+    <string name="search_hint">Type anything you wish to search (title, actor name, genre etc)</string>
+
+    <string name="rapidfire">Take this rapid-fire poll to help us improve our recommendations to you</string>
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="discover">Discover</string>
+
+    <string name="change_mobile"><u>Do you want to change mobile number?</u></string>
+
+    <string name="guest">Guest</string>
+    <string name="info">Help &amp; Support</string>
+    <string name="user_alert_info">This information is available only if you are logged in</string>
+    <string name="support_info_desc">You can reach out to us on WhatsApp or email (details given below) or use the TFS Play mobile app to submit your query</string>
+    <string name="whatsapp_contact_no">+91 7738778488</string>
+    <string name="email_address">contact@fiberstory.in</string>
+    <string name="login">Login</string>
+    <string name="ok">OK</string>
+
+    <string name="privacy_policy">PRIVACY POLICY</string>
+    <string name="terms_of_use">TERMS OF USE</string>
+    <string name="help_and_support">HELP AND SUPPORT</string>
+    <string name="log_out">LOG OUT</string>
+
+    <string name="contact_us">You may reach us at <a href="mailto:contact@fiberstory.in">contact@fiberstory.in</a> or please fill the form below and submit.</string>
+
+    <string name="Proceed">Proceed</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Login_Register_Alert_Message">Please Login/Register to view this content</string>
+    <string name="attention">Attention</string>
+
+    <string name="logout_Alert_Message">Do you really want to Log Out?</string>
+    <string name="exit_alert_message">Do you really want to Exit?</string>
+
+    <string name="content_more">more....</string>
+    <string name="content_less">less</string>
+
+    <string name="ppv_payment">Pay per view content can be viewed after making payment on TFS Play mobile app. \nPlease visit TFS Play mobile app.</string>
+    <string name="no_active_subscription">No Active Subscription!</string>
+
+
+    <string name="youtube_player_id">AIzaSyARDtnBvLMPjwJy_EIBArc3R9sGW_jg_Yw</string>
+    <string name="youtube">youtube</string>
+
+
+</resources>

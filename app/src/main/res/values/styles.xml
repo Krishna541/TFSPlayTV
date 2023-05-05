@@ -1,0 +1,46 @@
+<resources>
+
+    <style name="AppTheme" parent="@style/Theme.Leanback" />
+
+    <style name="GridCardStyle" parent="Widget.Leanback.ImageCardViewStyle">
+        <item name="cardBackground">@drawable/item_bg_transperant</item>
+    </style>
+
+    <style name="SideInfoCardStyle" parent="Widget.Leanback.BaseCardViewStyle">
+        <item name="cardType">mainOnly</item>
+    </style>
+
+    <style name="DialogTheme" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:background">@color/colorTransparent</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+    <style name="MyIOSSwitch" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">#F50000</item>
+        <item name="android:colorForeground">#888888</item>
+    </style>
+
+
+    <style name="Theme.VerticalGrid" parent="Theme.Leanback.VerticalGrid">
+        <item name="browseRowsMarginTop">120dp</item>
+        <item name="browseTitleViewLayout">@layout/custom_header_titleview</item>
+    </style>
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/grow_out</item>
+        <item name="android:windowExitAnimation">@anim/grow_in</item>
+    </style>
+
+    <style name="Theme.Comman" parent="Theme.Leanback.Browse">
+        <item name="browseRowsMarginTop">150dp</item>
+        <item name="browseTitleViewLayout">@layout/custom_header_titleview</item>
+        <item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+    </style>
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+</resources>

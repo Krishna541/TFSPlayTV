@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1015261914762",
+    "project_id": "tfs-play-android-tv",
+    "storage_bucket": "tfs-play-android-tv.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1015261914762:android:0bc83188e70a9bfceb2f73",
+        "android_client_info": {
+          "package_name": "in.fiberstory.tfsplaytv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1015261914762-3ds2vrbkt4occ01gfa30sa0re56fmvcj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.fiberstory.tfsplaytv",
+            "certificate_hash": "09e6920441165d47afc79befb66413292f13beea"
+          }
+        },
+        {
+          "client_id": "1015261914762-ep3vvefbtldnd61prhj4o2t1b407svu2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABnw8kSwZuS5xI2z4ck3bbLtto3okS5mw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1015261914762-ep3vvefbtldnd61prhj4o2t1b407svu2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

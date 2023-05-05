@@ -1,0 +1,25 @@
+<resources>
+    <color name="background_gradient_start">#000000</color>
+    <color name="background_gradient_end">#DDDDDD</color>
+    <color name="fastlane_background">#0096a6</color>
+    <color name="search_opaque">#ffaa3f</color>
+    <color name="selected_background">#ffaa3f</color>
+    <color name="default_background">#3d3d3d</color>
+    <color name="app_background">#A9421C</color>
+    <color name="unselected_color">#A397AD</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorAccent">#E26014</color>
+    <color name="colorBckground">#313232</color>
+    <color name="colorWhite_25">#25FFFFFF</color>
+    <color name="colorMidGray">#BAB8BB</color>
+    <color name="colorMidGrays">#9a9da0</color>
+    <color name="colorGray">#DDDDDD</color>
+    <color name="colorPrimary">#E26014</color>
+    <color name="colorBTransparent">#50000000</color>
+    <color name="colorCardBG">#e6e6e6</color>
+    <color name="colorYellow">#d99a29</color>
+    <color name="bg_color1">#23064D</color>
+    <color name="bg_color2">#0085B8</color>
+    <color name="colorAccentPink">#D53189</color>
+    <color name="colorBackground">#313232</color>
+</resources>

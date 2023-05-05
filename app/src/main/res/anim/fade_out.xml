@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/featureApkModel/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillAfter="true"
+    tools:ignore="NamespaceTypo">
+
+    <alpha
+        android:duration="900"
+        android:fromAlpha="1.0"
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:toAlpha="0.0" />
+
+</set>

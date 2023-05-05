@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?><!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/_120sdp"
+    android:layout_height="@dimen/_70sdp"
+    android:background="@drawable/bg_home_gradient"
+    android:clipToPadding="false"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/layShadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/layParent"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@color/transparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:visibility="visible"
+            app:cardBackgroundColor="#23064D"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/ivPoster"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/movie_bg_transperant"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/providerImage"
+                    android:layout_width="@dimen/dimen_provider"
+                    android:layout_height="@dimen/dimen_provider"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"
+                    android:src="@color/white" />
+
+                <ImageView
+                    android:id="@+id/imgFreeContent"
+                    android:layout_width="@dimen/dimen_provider"
+                    android:layout_height="@dimen/dimen_provider"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_free"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txtLanguage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/content_name"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/unselected_color"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txtYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/content_name"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/unselected_color"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/content_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivPoster"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_marginLeft ="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="#fff"
+                    android:textSize="10sp"
+                    android:visibility="visible" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+                <ImageView
+                    android:id="@+id/ivViewMore"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:background="@color/white"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_action_more_portrait"
+                    />
+
+
+    </RelativeLayout>
+
+</FrameLayout><!--
+</LinearLayout>-->

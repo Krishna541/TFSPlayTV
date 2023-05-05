@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_vert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.87" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:src="@drawable/tfs_launcher_icon"
+        app:layout_constraintBottom_toTopOf="@+id/guide1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_vertical|left"
+        android:text="Verification Code"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guide_middle"
+        app:layout_constraintTop_toBottomOf="@+id/guide1" />
+
+
+    <TextView
+        android:id="@+id/txt_title2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="#00A7E6"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/guide_end"
+        app:layout_constraintStart_toEndOf="@+id/guide_middle"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <TextView
+        android:id="@+id/txt_title3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/txt_bg_transparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/guide_end"
+        app:layout_constraintStart_toEndOf="@+id/guide_middle"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title2" />
+
+    <TextView
+        android:id="@+id/txt_title4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/txt_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/poppins_regular"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccentPink"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/guide_end"
+        app:layout_constraintStart_toEndOf="@+id/guide_middle"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title3"
+
+        />
+
+    <TextView
+        android:id="@+id/txt_title5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Didn't receive OTP?"
+        android:textColor="@color/unselected_color"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/guide_end"
+        app:layout_constraintStart_toEndOf="@+id/guide_middle"
+        app:layout_constraintTop_toBottomOf="@+id/lay_edt"
+        app:layout_goneMarginTop="@dimen/_10sdp" />
+
+    <TextView
+        android:id="@+id/txt_title6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/txt_bg_transparent"
+        android:clickable="true"
+
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/poppins_regular"
+        android:nextFocusLeft="@id/txt_title6"
+        android:nextFocusRight="@id/txt_title6"
+        android:nextFocusUp="@id/txt_title4"
+        android:nextFocusDown="@id/edt_one"
+        android:text="Resend Otp"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/guide_end"
+        app:layout_constraintStart_toEndOf="@+id/guide_middle"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title5" />
+
+    <LinearLayout
+        android:id="@+id/lay_edt"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_22sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:weightSum="6"
+        app:layout_constraintEnd_toStartOf="@+id/guide_end"
+        app:layout_constraintStart_toEndOf="@+id/guide_middle"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title4">
+
+        <in.fiberstory.tfsplaytv.utility.NoImeEditText
+            android:id="@+id/edt_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:background="@drawable/edt_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:maxLength="1"
+            android:nextFocusLeft="@id/edt_one"
+            android:nextFocusRight="@id/edt_two"
+            android:nextFocusUp="@id/txt_title6"
+            android:nextFocusDown="@id/btn_verify"
+            android:padding="@dimen/_1sdp" />
+
+        <in.fiberstory.tfsplaytv.utility.NoImeEditText
+            android:id="@+id/edt_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:background="@drawable/edt_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:maxLength="1"
+            android:nextFocusLeft="@id/edt_one"
+            android:nextFocusRight="@id/edt_three"
+            android:nextFocusUp="@id/txt_title6"
+            android:nextFocusDown="@id/btn_verify"
+            android:padding="@dimen/_1sdp" />
+
+        <in.fiberstory.tfsplaytv.utility.NoImeEditText
+            android:id="@+id/edt_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:background="@drawable/edt_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:maxLength="1"
+            android:nextFocusLeft="@id/edt_two"
+            android:nextFocusRight="@id/edt_four"
+            android:nextFocusUp="@id/txt_title6"
+            android:nextFocusDown="@id/btn_verify"
+            android:padding="@dimen/_1sdp" />
+
+        <in.fiberstory.tfsplaytv.utility.NoImeEditText
+            android:id="@+id/edt_four"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/edt_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:maxLength="1"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:nextFocusLeft="@id/edt_three"
+            android:nextFocusRight="@id/edt_five"
+            android:nextFocusUp="@id/txt_title6"
+            android:nextFocusDown="@id/btn_verify"
+            android:padding="@dimen/_1sdp" />
+
+        <in.fiberstory.tfsplaytv.utility.NoImeEditText
+            android:id="@+id/edt_five"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:background="@drawable/edt_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:maxLength="1"
+            android:nextFocusLeft="@id/edt_four"
+            android:nextFocusRight="@id/edt_six"
+            android:nextFocusUp="@id/txt_title6"
+            android:nextFocusDown="@id/btn_verify"
+            android:padding="@dimen/_1sdp" />
+
+        <in.fiberstory.tfsplaytv.utility.NoImeEditText
+            android:id="@+id/edt_six"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:background="@drawable/edt_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:maxLength="1"
+            android:nextFocusLeft="@id/edt_five"
+            android:nextFocusRight="@id/edt_six"
+            android:nextFocusUp="@id/txt_title6"
+            android:nextFocusDown="@id/btn_verify"
+            android:padding="@dimen/_1sdp" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/btn_transparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:nextFocusLeft="@id/btn_verify"
+        android:nextFocusRight="@id/btn_verify"
+        android:nextFocusDown="@id/btn_verify"
+        android:paddingLeft="@dimen/_20sdp"
+        android:paddingRight="@dimen/_20sdp"
+        android:text="Continue"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/guide_end"
+        app:layout_constraintStart_toEndOf="@+id/guide_middle"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title6"
+        app:layout_goneMarginTop="@dimen/_10sdp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#22000000"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/_6sdp"
+        android:weightSum="10"
+        app:layout_constraintEnd_toStartOf="@+id/guide_middle"
+        app:layout_constraintStart_toEndOf="@+id/ivIcon"
+        app:layout_constraintTop_toBottomOf="@+id/guide1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_22sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_4sdp"
+            android:text="Enter verification code"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <in.fiberstory.tfsplaytv.utility.CustomNumKeypad
+            android:id="@+id/custom_keypad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

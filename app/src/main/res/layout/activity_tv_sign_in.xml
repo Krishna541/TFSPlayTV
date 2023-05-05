@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="20dp"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_vert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.87" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_tfs_logo_landscape"
+        app:layout_constraintBottom_toTopOf="@+id/guide1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_vertical|start"
+        android:paddingBottom="10dp"
+        android:text="Sign In using OTP"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimens_20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guide_middle"
+        app:layout_constraintTop_toBottomOf="@+id/guide1" />
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/countryCodePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        app:ccpDialog_allowSearch="false"
+        android:layout_marginTop="2dp"
+        android:padding="6dp"
+        app:ccpDialog_backgroundColor="@color/white"
+        app:ccpDialog_fastScroller_bubbleColor="@color/colorAccent"
+        app:ccpDialog_fastScroller_handleColor="@color/colorPrimary"
+        app:ccpDialog_searchEditTextTint="@color/black"
+        app:ccpDialog_showTitle="true"
+        app:ccp_arrowColor="@color/white"
+        app:ccp_contentColor="@color/white"
+        app:ccp_countryPreference="IN"
+        app:ccp_defaultNameCode="IN"
+        app:ccp_textSize="14sp"
+        android:focusable="true"
+        app:layout_constraintEnd_toStartOf="@+id/edt_mobile"
+        app:layout_constraintStart_toEndOf="@+id/guide_middle"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <in.fiberstory.tfsplaytv.utility.NoImeEditText
+        android:id="@+id/edt_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/edt_bg"
+        android:clickable="true"
+        android:cursorVisible="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="Enter Your Mobile Number"
+        android:inputType="textEmailAddress"
+        android:nextFocusDown="@+id/btn_login"
+        android:nextFocusLeft="@id/countryCodePicker"
+        android:padding="3dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:privateImeOptions="horizontalAlignment=right"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="12sp"
+        android:maxLength="10"
+        app:layout_constraintEnd_toEndOf="@+id/guide_end"
+        app:layout_constraintStart_toEndOf="@+id/countryCodePicker"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/btn_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@null"
+        android:clickable="true"
+        android:focusable="true"
+        android:lineSpacingExtra="-4dp"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:textAppearance="@android:style/TextAppearance.Small"
+        android:paddingLeft="@dimen/_25sdp"
+        android:paddingRight="@dimen/_25sdp"
+        android:text="We will send you a one time password  \n on your registered mobile number"
+        android:textColorHint="@color/white"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="@+id/guide_end"
+        app:layout_constraintStart_toEndOf="@+id/guide_middle"
+        app:layout_constraintTop_toBottomOf="@+id/edt_mobile" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:background="@drawable/btn_transparent"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:nextFocusLeft="@id/btn_login"
+        android:nextFocusUp="@id/edt_mobile"
+        android:paddingLeft="@dimen/_25sdp"
+        android:paddingRight="@dimen/_25sdp"
+        android:text="LOGIN"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/guide_end"
+        app:layout_constraintStart_toEndOf="@+id/guide_middle"
+        app:layout_constraintTop_toBottomOf="@+id/btn_text" />
+
+    <TextView
+        android:id="@+id/txt_link"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txt_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/poppins_regular"
+        android:nextFocusLeft="@id/cb_remember"
+        android:nextFocusRight="@id/txt_link"
+        android:nextFocusUp="@id/btn_login"
+        android:nextFocusDown="@id/txt_link"
+        android:text="Need help signing up? Visit http://help.plexigo.com"
+        android:textAlignment="center"
+        android:textColor="#d7bcdc"
+        android:textSize="11sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/guide_end"
+        app:layout_constraintStart_toEndOf="@+id/guide_middle"
+        app:layout_constraintTop_toBottomOf="@+id/guide4" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/edt_bg_transperant"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusLeft="@id/btn_forgot"
+        android:nextFocusRight="@+id/cb_remember"
+        android:nextFocusUp="@id/btn_forgot"
+        android:nextFocusDown="@id/btn_forgot"
+        android:padding="5dp"
+        android:text="Forgot Password"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/guide_start"
+        app:layout_constraintTop_toBottomOf="@+id/guide4" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#22000000"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="6dp"
+        android:weightSum="10"
+        app:layout_constraintEnd_toStartOf="@+id/guide_middle"
+        app:layout_constraintStart_toEndOf="@+id/ivIcon"
+        app:layout_constraintTop_toBottomOf="@+id/guide1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center_vertical"
+            android:padding="4dp"
+            android:text="Enter Mobile Number"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <in.fiberstory.tfsplaytv.utility.CustomNumKeypad
+            android:id="@+id/custom_keypad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout><!--
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_rect"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        tools:context=".tv.Login.TvSignUpActivity">
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/dimens_30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/plexigo_logo_horizontal"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="@dimen/dimens_30dp"
+            android:layout_width="0dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Sign In"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_20sp"
+                    android:gravity="center_vertical|left" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:textSize="@dimen/font_12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:padding="3dp"
+                    android:id="@+id/edt_name"
+                    android:layout_marginBottom="12dp"
+                    android:hint="Enter Your Name"
+                    android:background="@drawable/edt_bg"
+                    android:textColor="@color/white"
+                    android:inputType="text"
+                    android:privateImeOptions="horizontalAlignment=right"
+                    android:textColorHint="@color/white" />
+
+                <EditText
+                    android:textSize="@dimen/font_12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:padding="3dp"
+                    android:id="@+id/edt_email"
+                    android:layout_marginBottom="12dp"
+                    android:hint="Enter Your Email"
+                    android:background="@drawable/edt_bg"
+                    android:textColor="@color/white"
+                    android:inputType="text"
+                    android:privateImeOptions="horizontalAlignment=right"
+                    android:textColorHint="@color/white" />
+
+
+                <EditText
+                    android:textSize="@dimen/font_12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:padding="3dp"
+                    android:id="@+id/edt_mobile"
+                    android:layout_marginBottom="12dp"
+                    android:hint="Enter Your Mobile"
+                    android:background="@drawable/edt_bg"
+                    android:textColor="@color/white"
+                    android:inputType="text"
+                    android:privateImeOptions="horizontalAlignment=right"
+                    android:textColorHint="@color/white" />
+
+                <EditText
+                    android:textSize="@dimen/font_12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:padding="3dp"
+                    android:id="@+id/edt_password"
+                    android:hint="Enter Your Password"
+                    android:background="@drawable/edt_bg"
+                    android:textColor="@color/white"
+                    android:inputType="text"
+                    android:layout_marginBottom="12dp"
+                    android:privateImeOptions="horizontalAlignment=right"
+                    android:textColorHint="@color/white" />
+
+                <EditText
+                    android:textSize="@dimen/font_12sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:padding="3dp"
+                    android:id="@+id/edt_conf_password"
+                    android:hint="Confirm Your Password"
+                    android:background="@drawable/edt_bg"
+                    android:textColor="@color/white"
+                    android:inputType="text"
+                    android:layout_marginBottom="12dp"
+                    android:privateImeOptions="horizontalAlignment=right"
+                    android:textColorHint="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>-->

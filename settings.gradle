@@ -1,0 +1,4 @@
+include ':tvnavigation'
+include ':app'
+include ':ccp'
+rootProject.name = "TFS Play TV"
